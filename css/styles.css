@@ -1,0 +1,164 @@
+:root {
+  --backgroud-page-color: #e5e5e5;
+  --brand-main-color: #2196f3;
+  --brand-color-background: #2f303a;
+  --brand-color-black: #212121;
+  --brand-color-grey: #f5f4fa;
+  --brand-color-white: #ffffff;
+  --nav-footer-color: #999999;
+  --brand-color-contact: #757575;
+  --backgroud-color-another: #ececec;
+  --font-primary: "Roboto", sans-serif;
+  --font-main: "Raleway", sans-serif;
+}
+* {
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+body {
+  font-family: var(--font-primary);
+  color: var(--brand-color-black);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+span {
+  color: var(--brand-main-color);
+}
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+p {
+  color: var(--brand-color-contact);
+  line-height: 1.19;
+}
+.logo-black,
+.logo-white {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 26px;
+}
+.logo-black {
+  color: var(--brand-color-black);
+}
+.logo-white {
+  color: var(--brand-color-white);
+}
+/*przyciski nawigacyjne*/
+.link-nav,
+.link-contact-header {
+  font-weight: 500;
+  color: var(--brand-color-black);
+}
+.link-contact-header {
+  font-weight: 500;
+  color: var(--brand-color-contact);
+}
+.link-contact-header:focus,
+.link-contact-header:hover,
+.link-nav:focus,
+.link-nav:hover {
+  color: var(--brand-main-color);
+}
+/* sekcja zamów*/
+.order {
+  background-color: var(--brand-color-background);
+  letter-spacing: 0.6em;
+  text-align: center;
+}
+/*tekst na szarym tle */
+.title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.55;
+  color: var(--brand-color-white);
+}
+/*przycisk zamów*/
+.link-order-button {
+  font-family: var(----font-primary); /*"Roboto", sans-serif;*/
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  background-color: var(--brand-main-color);
+  color: var(--brand-color-white);
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+}
+/*przyciski nawigacyjne portfolio*/
+.link-button {
+  font-family: var(----font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  color: var(--brand-color-black);
+  background-color: var(--brand-color-grey);
+  border-radius: 4px;
+}
+.link-button:focus,
+.link-button:hover {
+  color: var(--brand-color-white);
+  background-color: var(--brand-main-color);
+}
+.what-we-do {
+  background-color: var(--brand-color-white);
+}
+.head-1 .head-2 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.head-2 {
+  line-height: 1.71;
+}
+.head-3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.head-4 {
+  font-size: 16px;
+  line-height: 1.875;
+}
+.team {
+  background-color: var(--brand-color-grey);
+}
+.name-1 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.name-2 {
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team-bacground {
+  background-color: var(--brand-color-white);
+  width: 270px;
+  height: 368px;
+}
+.footer {
+  background-color: var(--brand-color-background);
+}
+.adress {
+  font-style: normal;
+  color: var(--brand-color-white);
+  line-height: 1.71;
+}
+.link-nav-footer {
+  color: var(--nav-footer-color);
+}
+.link-nav-footer:focus,
+.link-nav-footer:hover {
+  color: var(--brand-main-color);
+}
