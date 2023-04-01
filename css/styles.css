@@ -13,9 +13,10 @@
 }
 * {
   margin: 0;
+  padding: 0;
 }
 ul {
-  list-style: none;
+  list-style-type: none;
 }
 a {
   text-decoration: none;
@@ -28,11 +29,13 @@ body {
   color: var(--brand-color-black);
   letter-spacing: 0.03em;
   font-size: 14px;
+  line-height: 1.71;
 }
 span {
   color: var(--brand-main-color);
 }
 h2 {
+  display: flex;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -42,17 +45,25 @@ p {
   color: var(--brand-color-contact);
   line-height: 1.19;
 }
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .logo-black,
 .logo-white {
+  display: flex;
   font-family: var(--font-main);
   font-weight: 700;
   font-size: 26px;
 }
 .logo-black {
   color: var(--brand-color-black);
+  justify-content: flex-end;
 }
 .logo-white {
   color: var(--brand-color-white);
+  padding-bottom: 20px;
 }
 /*przyciski nawigacyjne*/
 .link-nav,
@@ -75,34 +86,49 @@ p {
   background-color: var(--brand-color-background);
   letter-spacing: 0.6em;
   text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 412px;
 }
+
 /*tekst na szarym tle */
 .title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.55;
+  line-height: 1.36;
   color: var(--brand-color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 106px;
+  padding-bottom: 30px;
 }
 /*przycisk zamów*/
 .link-order-button {
+  display: block;
   font-family: var(----font-primary); /*"Roboto", sans-serif;*/
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   background-color: var(--brand-main-color);
   color: var(--brand-color-white);
-  border-radius: 4px;
   letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding: 10px 41px;
 }
 /*przyciski nawigacyjne portfolio*/
 .link-button {
+  display: block;
   font-family: var(----font-primary);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
   color: var(--brand-color-black);
-  background-color: var(--brand-color-grey);
+  background: var(--brand-color-grey);
   border-radius: 4px;
+  padding: 6px 22px;
+  border-style: none;
 }
 .link-button:focus,
 .link-button:hover {
@@ -111,6 +137,11 @@ p {
 }
 .what-we-do {
   background-color: var(--brand-color-white);
+}
+.header {
+  background-color: var(--brand-color-white);
+  width: 100%;
+  display: flex;
 }
 .head-1 .head-2 {
   font-weight: 700;
@@ -132,28 +163,37 @@ p {
 }
 .team {
   background-color: var(--brand-color-grey);
+  margin-bottom: 53px;
 }
 .name-1 {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.17;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 .name-2 {
   font-size: 16px;
   line-height: 1.19;
+  padding-bottom: 30px;
 }
-.team-bacground {
+.team-background {
   background-color: var(--brand-color-white);
   width: 270px;
   height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .footer {
   background-color: var(--brand-color-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  line-height: 1.71;
 }
 .adress {
   font-style: normal;
   color: var(--brand-color-white);
-  line-height: 1.71;
 }
 .link-nav-footer {
   color: var(--nav-footer-color);
@@ -161,4 +201,87 @@ p {
 .link-nav-footer:focus,
 .link-nav-footer:hover {
   color: var(--brand-main-color);
+}
+
+/*rozmieszczenie*/
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-1 {
+  justify-content: center;
+}
+.section {
+  padding: 94px 0;
+}
+.border-nav {
+  border-bottom: 1px solid #ececec;
+}
+.nav-list {
+  display: flex;
+  padding: 25px;
+  column-gap: 93px;
+  margin-right: 346px;
+}
+.nav-list-1 {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+}
+.nav-list-2 {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.feature-list {
+  display: flex;
+  text-align: left;
+  gap: 30px;
+  padding-top: 94px;
+}
+
+.what-we-do {
+  display: flex;
+  padding-bottom: 50px;
+}
+.what-we-do-list {
+  display: flex;
+
+  gap: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.product-cards {
+  display: block;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.product-background {
+  display: flex;
+  flex-basis: calc((100%-15px) / 3);
+  background-color: var(--brand-color-white);
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eeeeee;
+}
+.product-cards-nav {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 50px;
+}
+.team-text {
+  padding-bottom: 50px;
+}
+.team-list {
+  display: flex;
+}
+.team-list-element {
+  display: flex;
+  padding-bottom: 53px;
+  gap: 30px;
+  text-align: center;
 }
