@@ -63,7 +63,7 @@ p {
 }
 .logo-white {
   color: var(--brand-color-white);
-  padding-bottom: 20px;
+  padding-bottom: 15.5px;
 }
 /*przyciski nawigacyjne*/
 .link-nav,
@@ -169,13 +169,11 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
-  padding-top: 30px;
   padding-bottom: 10px;
 }
 .name-2 {
   font-size: 16px;
   line-height: 1.19;
-  padding-bottom: 30px;
 }
 .team-background {
   background-color: var(--brand-color-white);
@@ -201,6 +199,9 @@ p {
 .link-nav-footer:focus,
 .link-nav-footer:hover {
   color: var(--brand-main-color);
+}
+.space {
+  padding: 4.5px 0;
 }
 
 /*rozmieszczenie*/
@@ -255,19 +256,27 @@ p {
   gap: 30px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.product-cards {
-  display: block;
+.products-cards {
+  display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
   gap: 30px;
 }
 .product-background {
-  display: flex;
+  display: block;
+  border: 1px solid #eeeeee;
   flex-basis: calc((100%-15px) / 3);
   background-color: var(--brand-color-white);
   width: 370px;
   height: 404px;
+}
+.product {
+  display: block;
+}
+.border {
   border: 1px solid #eeeeee;
 }
+
 .product-cards-nav {
   display: flex;
   gap: 8px;
@@ -284,4 +293,13 @@ p {
   padding-bottom: 53px;
   gap: 30px;
   text-align: center;
+}
+.team-name {
+  padding: 30px;
+}
+.description {
+  padding: 20px 24px;
+}
+.img {
+  display: block;
 }
