@@ -271,8 +271,6 @@ body {
 }
 .product-background {
   display: block;
-
-  flex-basis: calc((100%-15px) / 3);
   background-color: var(--brand-color-white);
   width: 368px;
   height: 402px;
