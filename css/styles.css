@@ -271,13 +271,14 @@ body {
 }
 .product-background {
   display: block;
-  border: 1px solid #eeeeee;
+
   flex-basis: calc((100%-15px) / 3);
   background-color: var(--brand-color-white);
   width: 368px;
   height: 402px;
 }
 .description {
+  border: 1px solid #eeeeee;
   padding: 20px 24px;
 }
 
