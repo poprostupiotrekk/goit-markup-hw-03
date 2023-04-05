@@ -24,13 +24,6 @@ a {
 button {
   cursor: pointer;
 }
-body {
-  font-family: var(--font-primary);
-  color: var(--brand-color-black);
-  letter-spacing: 0.03em;
-  font-size: 14px;
-  line-height: 1.71;
-}
 span {
   color: var(--brand-main-color);
 }
@@ -44,11 +37,47 @@ p {
   color: var(--brand-color-contact);
   line-height: 1.19;
 }
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+body {
+  font-family: var(--font-primary);
+  color: var(--brand-color-black);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
 }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section {
+  padding: 94px 0;
+}
+
+/*header*/
+
+.border-nav {
+  border-bottom: 1px solid #ececec;
+}
+.nav-list {
+  display: flex;
+  padding: 25px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list-1 {
+  display: flex;
+  gap: 46px;
+  padding-left: 93px;
+}
+.nav-list-2 {
+  display: flex;
+  gap: 50px;
+  padding-left: 371px;
+}
+
 .logo-black,
 .logo-white {
   display: flex;
@@ -79,108 +108,8 @@ p {
 .link-nav:hover {
   color: var(--brand-main-color);
 }
-/* sekcja zamów*/
-.order {
-  display: flex;
-  background-color: var(--brand-color-background);
-  letter-spacing: 0.6em;
-  text-align: center;
-  justify-content: center;
-  padding-top: 0;
-  padding-bottom: 100px;
-}
 
-/*tekst na szarym tle */
-.title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  color: var(--brand-color-white);
-  padding-top: 106px;
-  padding-bottom: 30px;
-}
-/*przycisk zamów*/
-.link-order-button {
-  display: inline-flex;
-
-  font-family: var(----font-primary); /*"Roboto", sans-serif;*/
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  background-color: var(--brand-main-color);
-  color: var(--brand-color-white);
-  letter-spacing: 0.06em;
-  border-radius: 4px;
-  padding: 10px 41px;
-}
-/*przyciski nawigacyjne portfolio*/
-.link-button {
-  display: flex;
-  font-family: var(----font-primary);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.625;
-  color: var(--brand-color-black);
-  background: var(--brand-color-grey);
-  border-radius: 4px;
-  padding: 6px 22px;
-  border-style: none;
-}
-.link-button:focus,
-.link-button:hover {
-  color: var(--brand-color-white);
-  background-color: var(--brand-main-color);
-}
-.what-we-do {
-  background-color: var(--brand-color-white);
-}
-.header {
-  background-color: var(--brand-color-white);
-  width: 100%;
-  display: flex;
-}
-.head-1 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  padding-bottom: 10px;
-}
-.head-2 {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-}
-.head-3 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.head-4 {
-  font-size: 16px;
-  line-height: 1.875;
-}
-.team {
-  background-color: var(--brand-color-grey);
-}
-.name-1 {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.17;
-  padding-bottom: 10px;
-}
-.name-2 {
-  font-size: 16px;
-  line-height: 1.19;
-}
-.team-background {
-  background-color: var(--brand-color-white);
-  width: 270px;
-  height: 368px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
+/*footer*/
 .footer {
   background-color: var(--brand-color-background);
   padding-top: 60px;
@@ -205,51 +134,62 @@ p {
   padding: 4.5px 0;
 }
 
-/*rozmieszczenie*/
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.container-1 {
+/* sekcja zamów*/
+.order {
+  display: flex;
+  background-color: var(--brand-color-background);
+  letter-spacing: 0.6em;
+  text-align: center;
   justify-content: center;
+  padding-top: 0;
+  padding-bottom: 100px;
 }
-.section {
-  padding: 94px 0;
+/*tekst na szarym tle */
+.title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  color: var(--brand-color-white);
+  padding-top: 106px;
+  padding-bottom: 30px;
 }
-.border-nav {
-  border-bottom: 1px solid #ececec;
-}
-.nav-list {
-  display: flex;
-  padding: 25px 0;
-  align-items: center;
-  justify-content: space-between;
+/*przycisk zamów*/
+.link-order-button {
+  display: inline-flex;
+  font-family: var(----font-primary); /*"Roboto", sans-serif;*/
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  background-color: var(--brand-main-color);
+  color: var(--brand-color-white);
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding: 10px 41px;
 }
 
-.nav-list-1 {
-  display: flex;
-  gap: 46px;
-  padding-left: 93px;
-}
-.nav-list-2 {
-  display: flex;
-  gap: 50px;
-  padding-left: 371px;
-}
-
+/* seckja lorem ipsum*/
 .feature-list {
   display: flex;
   text-align: left;
   gap: 30px;
 }
+.head-1 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  padding-bottom: 10px;
+}
+.head-2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/*czym się zajmujemy*/
 
 .what-we-do {
-  display: flex;
-  align-items: center;
   padding-bottom: 50px;
-  justify-content: center;
+  background-color: var(--brand-color-white);
 }
 .what-we-do-list {
   display: flex;
@@ -257,6 +197,71 @@ p {
   gap: 30px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+/*nasz zespół*/
+
+.team {
+  background-color: var(--brand-color-grey);
+}
+.team-text {
+  padding-bottom: 50px;
+}
+
+.team-list-element {
+  display: flex;
+  gap: 30px;
+  text-align: center;
+  justify-content: center;
+}
+.team-name {
+  padding: 30px;
+}
+.team-background {
+  background-color: var(--brand-color-white);
+  width: 270px;
+  height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.name-1 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  padding-bottom: 10px;
+}
+.name-2 {
+  font-size: 16px;
+  line-height: 1.19;
+}
+/*nawigacja po portfolio*/
+
+.product-cards-nav {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+/*przyciski nawigacyjne portfolio*/
+
+.link-button {
+  display: flex;
+  font-family: var(----font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  color: var(--brand-color-black);
+  background: var(--brand-color-grey);
+  border-radius: 4px;
+  padding: 6px 22px;
+  border-style: none;
+}
+.link-button:focus,
+.link-button:hover {
+  color: var(--brand-color-white);
+  background-color: var(--brand-main-color);
+}
+/*karty produktów*/
+
 .products-cards {
   display: flex;
   justify-content: center;
@@ -269,46 +274,30 @@ p {
   border: 1px solid #eeeeee;
   flex-basis: calc((100%-15px) / 3);
   background-color: var(--brand-color-white);
-  width: 370px;
-  height: 404px;
-}
-.product {
-  display: block;
-}
-.border {
-  border: 1px solid #eeeeee;
-}
-
-.product-cards-nav {
-  display: flex;
-  gap: 8px;
-  padding-bottom: 50px;
-  justify-content: center;
-}
-.team-text {
-  padding-bottom: 50px;
-}
-.team-list {
-  display: flex;
-  justify-content: center;
-}
-.team-list-element {
-  display: flex;
-  padding-bottom: 53px;
-  gap: 30px;
-  text-align: center;
-  justify-content: center;
-}
-.team-name {
-  padding: 30px;
+  width: 368px;
+  height: 402px;
 }
 .description {
   padding: 20px 24px;
 }
+
+.head-3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.head-4 {
+  font-size: 16px;
+  line-height: 1.875;
+}
+
+/*pomocnicze*/
+
+.padding-0 {
+  padding-top: 0;
+  padding-bottom: 53px;
+}
 .img {
   display: block;
-}
-.place {
-  justify-content: center;
-  align-items: center;
 }
